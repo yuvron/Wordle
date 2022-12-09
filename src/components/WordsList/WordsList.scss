@@ -11,9 +11,22 @@
 		.letter {
 			@include flex(row, center, center);
 			@include size(65px, 65px);
-			color: $bg-color;
 			border: 2px solid $border-color;
+			border-radius: 3px;
 			text-transform: uppercase;
+			color: $bg-color;
+			&.wrong {
+				background-color: $wrong-color;
+				border-color: $wrong-color;
+			}
+			&.part-correct {
+				background-color: $part-correct-color;
+				border-color: $part-correct-color;
+			}
+			&.correct {
+				background-color: $correct-color;
+				border-color: $correct-color;
+			}
 		}
 	}
 }
