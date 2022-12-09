@@ -1,8 +1,8 @@
 import "./App.scss";
-import GameBox from "./components/GameBox/GameBox";
+import WordsList from "./components/WordsList/WordsList";
 
 const App: React.FC = () => {
-	return <GameBox />;
+	return <WordsList />;
 };
 
 export default App;
